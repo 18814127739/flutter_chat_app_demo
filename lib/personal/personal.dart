@@ -11,7 +11,8 @@ class Personal extends StatelessWidget {
         // 判断是否每个菜单组的第一个菜单, 第一个菜单不用加border
         item == menuGroupItem.first ? ImItem(
           title: item.title,
-          imagePath: item.imagePath,
+          imagePath: item.imagePath != null ? item.imagePath : null,
+          icon: item.icon != null ? item.icon : null,
           pagePath: item.pagePath != null ? item.pagePath : null,
         ) : 
         Column(
@@ -25,7 +26,8 @@ class Personal extends StatelessWidget {
             ),
             ImItem(
               title: item.title,
-              imagePath: item.imagePath,
+              imagePath: item.imagePath != null ? item.imagePath : null,
+              icon: item.icon != null ? item.icon : null,
             ),
           ],
         )

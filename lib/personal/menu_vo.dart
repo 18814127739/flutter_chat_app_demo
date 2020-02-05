@@ -14,6 +14,7 @@ List<List<MenuVO>> menuData = [
     MenuVO(
       title: '好友动态',
       imagePath: 'images/icon_me_friends.png',
+      // icon: Icon(Icons.add),
       pagePath: '/friends',
     )
   ],
