@@ -51,7 +51,7 @@ class Personal extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           Container(
-            margin: EdgeInsets.only(top: 20),
+            // margin: EdgeInsets.only(top: 20),
             color: Colors.white,
             height: 80.0,
             child: TouchCallBack(

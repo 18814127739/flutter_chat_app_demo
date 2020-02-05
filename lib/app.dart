@@ -116,15 +116,15 @@ class AppState extends State<App> {
               onTap: () {
                 // 弹出菜单
                 showMenu(
-                    context: context,
-                    position: RelativeRect.fromLTRB(500.0, 76.0, 10.0, 0.0),
-                    items: <PopupMenuEntry>[
-                      renderPopupMenuItem('发起会话',
-                          imagePath: 'iamges/icon_menu_group.png'),
-                      renderPopupMenuItem('添加好友',
-                          imagePath: 'iamges/icon_menu_addfriend.png'),
-                      renderPopupMenuItem('联系客服', icon: Icons.person),
-                    ]);
+                  context: context,
+                  position: RelativeRect.fromLTRB(500.0, 76.0, 10.0, 0.0),
+                  items: <PopupMenuEntry>[
+                    renderPopupMenuItem('发起会话',
+                        imagePath: 'iamges/icon_menu_group.png'),
+                    renderPopupMenuItem('添加好友',
+                        imagePath: 'iamges/icon_menu_addfriend.png'),
+                    renderPopupMenuItem('联系客服', icon: Icons.person),
+                  ]);
               },
               child: Icon(Icons.add),
             ),
