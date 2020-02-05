@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ContactVO {
-  // 字母排列值
+  // 字母排列值s
   String seationKey;
   String name;
   String avatarUrl;

@@ -41,11 +41,11 @@ class ContactState extends State<ContactSiderList> {
   }
 
   // 根据定位判断是否显示好友列表头
-  bool shouldShowHeader(int position) {
-    if(position <= 0) {
+  bool shouldShowHeader(int index) {
+    if(index == 0) {
       return false;
     }
-    if(position != 0 && widget.items[position].seationKey != widget.items[position - 1].seationKey) {
+    if(index > 0 && widget.items[index].seationKey != widget.items[index - 1].seationKey) {
       return false;
     }
     return true;
